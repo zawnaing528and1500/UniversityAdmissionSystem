@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript">
+function handleSelect() {
+    if (this.value == '01') {
+        document.getElementById('select02').disabled = true;
+    } else {
+        document.getElementById('select02').disabled = false;
+    }
+}
+</script>
+</head>
+<body>
+<form id="creation" name="creation" onchange="handleSelect()">
+<select name="select01" id="select01">
+     <option value="01">01</option>
+     <option value="02">02</option>
+     <option value="03">03</option>
+</select>
+
+<select name="select02" id="select02" disabled>
+     <option value="aa">aa</option>
+     <option value="bb">bb</option>
+     <option value="cc">cc</option>
+</select>
+</form>
+</body>
+</html>
